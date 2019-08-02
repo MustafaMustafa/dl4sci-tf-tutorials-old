@@ -24,7 +24,7 @@ def show_tb_address():
     username = getpass.getuser()
     tb_port = get_tb_port(username)
     
-    address = "https://jupyter-dl.nersc.gov/user/" + "username" + "/proxy/" + str(tb_port) + "/"
+    address = "https://jupyter-dl.nersc.gov/user/" + username + "/proxy/" + str(tb_port) + "/"
     address = address.strip()
     
     display(HTML('<a href="%s">%s</a>'%(address,address)))
